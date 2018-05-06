@@ -1,11 +1,19 @@
-.cabeza{
-  background-color: #0F0505;
-}
-.nombre{
-  color :white;
- font-family: 'PT Sans Narrow', sans-serif;
 
+.nombre{
+  color :black;
+ font-family: 'PT Sans Narrow', sans-serif;
 }
-#cuadrito1{
-	background-color: red;
-  }
+
+#cabeza{
+  margin-bottom: auto;
+  padding-bottom: auto;
+}
+nav{
+  margin-top: 0px;
+  padding-top: 0px;
+}
+
+#logo{
+  height: auto;
+  width: 80%;
+}
