@@ -1,0 +1,1 @@
+Inicio de el proyecto de Web. En esta carpeta se subiran las vistas y el back end del servidor.
