@@ -1,19 +1,8 @@
-
-.nombre{
-  color :black;
- font-family: 'PT Sans Narrow', sans-serif;
+span{
+	color:white;
 }
 
-#cabeza{
-  margin-bottom: auto;
-  padding-bottom: auto;
-}
-nav{
-  margin-top: 0px;
-  padding-top: 0px;
-}
 
-#logo{
-  height: auto;
-  width: 80%;
-}
+
+
+
