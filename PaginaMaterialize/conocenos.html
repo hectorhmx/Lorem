@@ -3,208 +3,278 @@
 
 	<head>
 		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-		<!--Import materialize.css-->
-		<link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow|Roboto+Slab|Skranji" rel="stylesheet">
-		<link type="text/css" rel="stylesheet" href="css/materialize.css" media="screen,projection" />
+
+		<link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
 		<link rel="stylesheet" type="text/css" href="css/style.css">
-		<!--Let browser know website is optimized for mobile-->
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
 		<title>Tecnologico Netkaizen</title>
 	</head>
 
 	<body>
 
-		<div id="cabeza" class="row #e3f2fd blue lighten-5">
-			<div class="col s5 ">
-				<img id="logo" src="img/kaizen.png">
+
+
+
+		<div class="parallax-container">
+			<div class="parallax">
+				<img src="img/net.jpg">
 			</div>
-			<div class="col s ">
-				<div class="nombre">
-					<div class="row ">
-						<h4>Instituto Tecnológico</h4>
-					</div>
-					<div class="row">
-						<h4>Net Kaizen</h4>
-					</div>
-				</div>
-			</div>
-		</div>
-		<nav>
-			<ul id="dropdown1" class="dropdown-content #424242 grey darken-3 ">
+			<ul class="sidenav" id="mobile-demo">
 				<li>
-					<a href="#!">Ingenieria en Computacion</a>
+					<a href="index.html">Inicio</a>
 				</li>
 				<li>
-					<a href="#!">Ingenieria en Telecomunicaciones</a>
+					<a href="oferta.html">Oferta Educativa</a>
 				</li>
 				<li>
-					<a href="#!">Ingenieria civil</a>
+					<a class="dropdown-trigger" data-target="dropdown1">Nosotros
+						<i class="material-icons right">arrow_drop_down</i>
+					</a>
 				</li>
 				<li>
-					<a href="#!">Ingenieria Industrial</a>
+					<a href="cursos.html">Cursos</a>
 				</li>
 				<li>
-					<a href="#!">Ingenieria Aeronautica</a>
+					<a href="conocenos.html">Campus</a>
 				</li>
 				<li>
-					<a href="#!">Ingenieria Mecatronica</a>
+					<a href="contacto.html">Contacto</a>
+				</li>
+				<li>
+					<a href="iniciarsesion.html">Iniciar Sesion</a>
+				</li>
+				<li>
+					<a href="registrarse.html">Registarse</a>
 				</li>
 			</ul>
-			<ul id="dropdown2" class="dropdown-content #424242 grey darken-3 ">
-				<li>
-					<a href="#!">Ingenieria en Computacion</a>
-				</li>
-				<li>
-					<a href="#!">Ingenieria en Telecomunicaciones</a>
-				</li>
-				<li>
-					<a href="#!">Ingenieria civil</a>
-				</li>
-				<li>
-					<a href="#!">Ingenieria Industrial</a>
-				</li>
-				<li>
-					<a href="#!">Ingenieria Aeronautica</a>
-				</li>
-				<li>
-					<a href="#!">Ingenieria Mecatronica</a>
-				</li>
-			</ul>
+			<div class="navbar-fixed">
+				<nav>
+					<ul id="dropdown2" class="dropdown-content #424242 grey darken-3 ">
+						<li>
+							<a href="#!">
+								<span>Mision</span>
+							</a>
+						</li>
+						<li>
+							<a href="#!">
+								<span>Vision</span>
+							</a>
+						</li>
+						<li>
+							<a href="#!">
+								<span>Semblanza Historica</span>
+							</a>
+						</li>
 
-			<div class="nav-wrapper #424242 grey darken-3">
+					</ul>
+					<ul id="dropdown1" class="dropdown-content #424242 grey darken-3 ">
+							<li>
+								<a href="#!">
+									<span>Mision</span>
+								</a>
+							</li>
+							<li>
+								<a href="#!">
+									<span>Vision</span>
+								</a>
+							</li>
+							<li>
+								<a href="#!">
+									<span>Semblanza Historica</span>
+								</a>
+							</li>
+	
+						</ul>
 
-				<a href="#" data-target="mobile-demo" class="sidenav-trigger">
-					<i class="material-icons">menu</i>
-				</a>
-				<ul class="right hide-on-med-and-down">
-					<li>
-						<a href="index.html">Inicio</a>
-					</li>
-					<li>
-						<a class="dropdown-trigger" href="#!" data-target="dropdown2">Oferta Educativa
-							<i class="material-icons right">arrow_drop_down</i>
+					<div class="nav-wrapper #424242 grey darken-3">
+						<img src="img/kaizen1.png" width="190" height="64">
+						<a href="#" data-target="mobile-demo" class="sidenav-trigger">
+							<i class="material-icons">
+								menu
+							</i>
 						</a>
-					</li>
-					<li>
-						<a href="cursos.html">Cursos</a>
-					</li>
-					<li>
-						<a href="planteles.html">Planteles</a>
-					</li>
-					<li>
-						<a href="conocenos.html">Conocenos</a>
-					</li>
-					<li>
-						<a href="contacto.html">Contacto</a>
-					</li>
-					<li>
-						<a href="iniciarsesion.html">Iniciar Sesion</a>
-					</li>
-					<li>
-						<a href="registrarse.html">Registarse</a>
-					</li>
-				</ul>
+						<!-- LOGOTIPO -->
+						<ul class="right hide-on-med-and-down">
+							<li>
+								<a href="index.html">Inicio</a>
+							</li>
+							<li>
+								<a href="oferta.html">Oferta Educativa</a>
+							</li>
+							<li>
+								<a class="dropdown-trigger" data-target="dropdown2">Nosotros
+									<i class="material-icons right">arrow_drop_down</i>
+								</a>
+							</li>
+							<li>
+								<a href="cursos.html">Cursos</a>
+							</li>
+							<li>
+								<a href="conocenos.html">Campus</a>
+							</li>
+							<li>
+								<a href="contacto.html">Contacto</a>
+							</li>
+							<li>
+								<a href="iniciarsesion.html">Iniciar Sesion</a>
+							</li>
+							<li>
+								<a href="registrarse.html">Registarse</a>
+							</li>
+						</ul>
+					</div>
+				</nav>
+
 			</div>
-		</nav>
-		<ul class="sidenav" id="mobile-demo">
-			<li>
-				<a href="index.html">Inicio</a>
-			</li>
-			<li>
-				<a class="dropdown-trigger" href="#!" data-target="dropdown1">Oferta Educativa
-					<i class="material-icons right">arrow_drop_down</i>
-				</a>
-			</li>
-			<li>
-				<a href="cursos.html">Cursos</a>
-			</li>
-			<li>
-				<a href="planteles.html">Planteles</a>
-			</li>
-			<li>
-				<a href="conocenos.html">Conocenos</a>
-			</li>
-			<li>
-				<a href="contacto.html">Contacto</a>
-			</li>
-			<li>
-				<a href="iniciarsesion.html">Iniciar Sesion</a>
-			</li>
-			<li>
-				<a href="registrarse.html">Registarse</a>
-			</li>
-		</ul>
-		<br>
-		<br>
-		<!--Termina nav bar-->
-		<!--Empieza el main-->
+
+		</div>
+		<!--Fin del nav-->
+		<!--Inicio main-->
 
 
 		<main>
 			<div class="container">
-
 				<div class="row">
-					<h1>Mision</h1>
+					<div class="col s12">
+						<h1>Informacion de el campus</h1>
+						<p>Tenemos cedes en: Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit soluta fuga tempora, architecto,
+							possimus ad nemo facilis autem iure maxime ipsam magni. Impedit illum voluptate ex, et repudiandae adipisci possimus?
+							Ut nostrum dignissimos illum nisi dolorem, explicabo quis. Corporis sunt excepturi earum similique atque expedita
+							eum amet, recusandae dolore, iste quas aspernatur harum fugiat quis quaerat alias veritatis? Minus, animi? Asperiores
+							qui tempora rerum exercitationem repudiandae quam iusto reiciendis officia veritatis. Soluta dolore aperiam dolor
+							eveniet eligendi! Aliquid possimus non esse totam repellat reprehenderit mollitia, aliquam aut iure? Minima, doloribus!</p>
+					</div>
 				</div>
 				<div class="row">
-					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa non nulla explicabo animi laudantium delectus iure qui
-						esse omnis quibusdam accusamus fugiat porro expedita, facilis id error modi corrupti! Eos.Nesciunt dignissimos ipsa
-						sit ad? Et iste ipsum quidem corporis non neque cum magni veniam voluptate molestiae. Magni eligendi quos maxime eum,
-						earum modi dolore tenetur alias tempore fugiat. Corrupti!
-					</p>
+					<div class="col m6 offset-s1">
+						<div class="row">
+							<h3>Referencias</h3>
+							<p>Washinton post</p>
+							<p>C mamo</p>
+						</div>
+						<div class="row">
+							<p>Podríamos hacer un video de el tecnológico</p>
+							<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/KdaWqjYLyck" frameborder="0" allow="autoplay; encrypted-media"
+							 allowfullscreen></iframe>
+						</div>
+					</div>
+					<div class="col m6 offset-s1">
+						<div class="row">
+							<br>
+							<p>aun no se ve, pero aquí hay información de la pagina de facebook</p>
+							<div class="fb-page" data-href="https://www.facebook.com/Tecnologico-NetKaizen-173338166709017/" data-tabs="timeline" data-small-header="true"
+							 data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false">
+								<blockquote cite="https://www.facebook.com/Tecnologico-NetKaizen-173338166709017/" class="fb-xfbml-parse-ignore">
+									<a href="https://www.facebook.com/Tecnologico-NetKaizen-173338166709017/">Tecnologico NetKaizen</a>
+								</blockquote>
+							</div>
+						</div>
+						<div class="row">
+							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3760.4568004250596!2d-99.03477138453265!3d19.521992586833633!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1faa2dbdb6471%3A0x8f750b9da6753801!2s84+km%2C+Av.+Carlos+Hank+Gonz%C3%A1lez+9%2C+Jardines+de+Aragon%2C+55140+Ecatepec+de+Morelos%2C+M%C3%A9x.!5e0!3m2!1ses-419!2smx!4v1525772120464"
+							 width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
+						</div>
+					</div>
 				</div>
 				<div class="row">
-					<h1>Vision</h1>
+					<div class="s12">
+						<p>aun no se ve, pero aquí hay comentarios de facebook</p>
+						<div class="fb-comments" data-href="https://www.facebook.com/Tecnologico-NetKaizen-173338166709017/" data-width="auto" data-numposts="10"></div>
+					</div>
 				</div>
-				<div class="row">
-					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa non nulla explicabo animi laudantium delectus iure qui
-						esse omnis quibusdam accusamus fugiat porro expedita, facilis id error modi corrupti! Eos.Nesciunt dignissimos ipsa
-						sit ad? Et iste ipsum quidem corporis non neque cum magni veniam voluptate molestiae. Magni eligendi quos maxime eum,
-						earum modi dolore tenetur alias tempore fugiat. Corrupti!
-					</p>
-				</div>
-				<div class="row">
-					<h1>Objetivos</h1>
-				</div>
-				<div class="row">
-					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa non nulla explicabo animi laudantium delectus iure qui
-						esse omnis quibusdam accusamus fugiat porro expedita, facilis id error modi corrupti! Eos.Nesciunt dignissimos ipsa
-						sit ad? Et iste ipsum quidem corporis non neque cum magni veniam voluptate molestiae. Magni eligendi quos maxime eum,
-						earum modi dolore tenetur alias tempore fugiat. Corrupti!
-					</p>
-				</div>
-
-
-
 			</div>
 		</main>
 
 
-		<!--Empieza el footer, termina main-->
-		<footer class="page-footer #212121 grey darken-4">
-			<div class="container">
+		<!--Termina main, inicia el fin de la pagina-->
+
+
+
+
+		<div class="row">
+			<div class="col m5"></div>
+			<div class="col m2">
+				<img class="img-responsive" src="img/kaizen.png" width="200" height="100">
+			</div>
+			<div class="col m5"></div>
+
+		</div>
+		<div class="row">
+			<div class="col m1"></div>
+			<div class="col m10">
+				<h6 align="center">Tecnologico NetKaizen 2018. Todos los derechos reservados</h6>
+			</div>
+			<div class="col m1"></div>
+
+		</div>
+
+
+		<footer class="page-footer #424242 grey darken-4">
+			<div class="container-fluid">
 				<div class="row">
-					<div class="col l6 s12">
-						<h5 class="white-text">Buscanos en nuestras redes sociales</h5>
-						<p class="grey-text text-lighten-4">Twiter ----> @ElectroPrebe</p>
-						<p>Facebook ----> ElectroPrebes</p>
-						<p>E-mail ----> normanbrandons11@gmail.com</p>
+					<div class="col m1"></div>
+					<div class="col m2">
+						<img src="img/kaizen1.png" width="190" height="64">
+					</div>
+					<div class="col m1"></div>
+					<div class="col m2">
+
+						<ul>
+							<li>
+								<a class="grey-text text-lighten-3" href="#!">ADMISION</a>
+							</li>
+							<li>
+								<a class="grey-text text-lighten-3" href="#!">DIFERENCIA NET</a>
+							</li>
+							<li>
+								<a class="grey-text text-lighten-3" href="#!">INVESTIGACION</a>
+							</li>
+						</ul>
+					</div>
+					<!-- <div class="col m1"></div> -->
+					<div class="col m2">
+
+						<ul>
+							<li>
+								<a class="grey-text text-lighten-3" href="#!">NOSOTROS</a>
+							</li>
+							<li>
+								<a class="grey-text text-lighten-3" href="#!">OFERTA EDUCATIVA</a>
+							</li>
+							<li>
+								<a class="grey-text text-lighten-3" href="#!">CAMPUS</a>
+							</li>
+						</ul>
+					</div>
+					<!-- <div class="col m1"></div> -->
+					<div class="col m3">
+						<h5>Siguenos en:</h5>
+						<ul>
+
+						</ul>
 					</div>
 				</div>
 			</div>
+
 			<div class="footer-copyright">
 				<div class="container">
 					© 2014 Copyright Text
-					<a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+
 				</div>
 			</div>
 		</footer>
-
 		<script src="js/jquery-3.3.1.min.js"></script>
 		<script src="js/materialize.min.js"></script>
 		<script src="js/app.js"></script>
 		<script src="js/carousel.js"></script>
 		<script type="text/javascript"></script>
+		<div id="fb-root"></div>
+		<script>(function (d, s, id) {
+				var js, fjs = d.getElementsByTagName(s)[0];
+				if (d.getElementById(id)) return;
+				js = d.createElement(s); js.id = id;
+				js.src = 'https://connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v3.0&appId=434723220294569&autoLogAppEvents=1';
+				fjs.parentNode.insertBefore(js, fjs);
+			}(document, 'script', 'facebook-jssdk'));</script>
 	</body>
 
 </html>
