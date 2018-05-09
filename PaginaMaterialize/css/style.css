@@ -3,25 +3,12 @@ span{
 }
 
 
-
-html, body, .block {
-  height: 100%;
-}
-
-// Class for when element is above threshold
-.pin-top {
-  position: relative;
-}
-
-// Class for when element is below threshold
-.pin-bottom {
-  position: relative;
-}
-
-// Class for when element is pinned
-.pinned {
-  position: fixed !important;
-}
 .tres{
 	background-color: black;
+}
+.terry{
+
+	 display: inline-block;
+	 max-width: 600px;
+	 height: auto;
 }
