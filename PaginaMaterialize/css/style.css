@@ -1,9 +1,14 @@
-.cabeza{
-  background-color: #0F0505;
+span{
+	color:white;
 }
-.nombre{
-  color :white;
- font-family: 'PT Sans Narrow', sans-serif;
 
+
+.tres{
+	background-color: black;
 }
-  
+.terry{
+
+	 display: inline-block;
+	 max-width: 600px;
+	 height: auto;
+}

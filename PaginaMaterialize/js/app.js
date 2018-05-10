@@ -1,11 +1,8 @@
-  
-    // Or with j              
   $(document).ready(function(){
+
     $('.parallax').parallax();
-     $('.slider').slider();
-     $(".dropdown-trigger").dropdown();
-  $('.carousel.carousel-slider').carousel({
-    fullWidth: true
-    
-  }); 
+    $(".dropdown-trigger").dropdown();
+    $('.sidenav').sidenav();
+      $('.pushpin').pushpin();
+        $('.slider').slider();
   });
