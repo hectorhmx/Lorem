@@ -24,7 +24,7 @@
 			<a href="{% url 'home' %}">Inicio</a>
 		</li>
 		<li>
-			<a href="oferta.html">Oferta Educativa</a>
+			<a href="{% url 'offer' %}">Oferta Educativa</a>
 		</li>
 		<li>
 			<a class="dropdown-trigger" data-target="dropdown1">Nosotros
@@ -32,7 +32,7 @@
 			</a>
 		</li>
 		<li>
-			<a href="planteles.html">Campus</a>
+			<a href="{% url 'campus' %}">Campus</a>
 		</li>
 		<li>
 			<a href="cursos.html">Cursos y Colegiaturas</a>
@@ -49,17 +49,17 @@
 		<nav>
 			<ul id="dropdown2" class="dropdown-content #424242 grey darken-3 ">
 				<li>
-					<a href="mision.html">
+					<a href="{% url 'mision' %}">
 						<span>Mision</span>
 					</a>
 				</li>
 				<li>
-					<a href="vision.html">
+					<a href="{% url 'vision' %}">
 						<span>Vision</span>
 					</a>
 				</li>
 				<li>
-					<a href="historia.html">
+					<a href="{% url 'history' %}">
 						<span>Semblanza Historica</span>
 					</a>
 				</li>
@@ -68,17 +68,17 @@
 			<!--Hay dos dropdown porque son necesarios para navbar y side-nav -->
 			<ul id="dropdown1" class="dropdown-content #424242 grey darken-3 ">
 				<li>
-					<a href="mision.html">
+					<a href="{% url 'mision' %}">
 						<span>Mision</span>
 					</a>
 				</li>
 				<li>
-					<a href="vision.html">
+					<a href="{% url 'vision' %}">
 						<span>Vision</span>
 					</a>
 				</li>
 				<li>
-					<a href="historia.html">
+					<a href="{% url 'history' %}">
 						<span>Semblanza Historica</span>
 					</a>
 				</li>
@@ -98,7 +98,7 @@
 						<a href="{% url 'home' %}">Inicio</a>
 					</li>
 					<li>
-						<a href="oferta.html">Oferta Educativa</a>
+						<a href="{% url 'offer' %}">Oferta Educativa</a>
 					</li>
 					<li>
 						<a class="dropdown-trigger" data-target="dropdown2">Nosotros
@@ -106,7 +106,7 @@
 						</a>
 					</li>
 					<li>
-						<a href="planteles.html">Campus</a>
+						<a href="{% url 'campus' %}">Campus</a>
 					</li>
 					<li>
 						<a href="cursos.html">Cursos y Colegiaturas</a>
