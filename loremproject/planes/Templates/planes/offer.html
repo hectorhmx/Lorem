@@ -1,0 +1,51 @@
+{% extends 'core/base.html' %} {% load static %} {% block content %}
+<main>
+
+	<div class="row">
+		<div class="col s1 m1"></div>
+		<div class="col s10 m4">
+			<h1>Oferta Educativa</h1>
+
+			<p> En el Tecnológico NetKaizen innovamos continuamente nuestra oferta académica para que siempre responda a los cambios sociales,
+				económicos, laborales, científicos y tecnológicos.</p>
+		</div>
+		<div class="col s1"></div>
+		<div class="col m4">
+			<br>
+			<img class="terry" src="{% static 'core/img/exce.jpg' %}">
+		</div>
+	</div>
+
+	<!--Inicio de las cards-->
+
+
+	<div class="container">
+		<div class="row">
+			{% for cardit in carreras %}
+			<div class="col l4 s12 m12">
+				<div class="card medium">
+					<div class="card-image waves-effect waves-block waves-light">
+						<img class="activator" src="{{cardit.image.url}}">
+					</div>
+					<div class="card-content">
+						<span class="card-title activator grey-text text-darken-4">{{cardit.title}}
+							<i class="material-icons right">more_vert</i>
+						</span>
+						<p>
+							<a href="{{cardit.link}}">Plan de estudios</a>
+						</p>
+					</div>
+					<div class="card-reveal">
+						<span class="card-title grey-text text-darken-4">{{cardit.clave}}
+							<i class="material-icons right">close</i>
+						</span>
+						<p>{{cardit.description}}</p>
+					</div>
+				</div>
+			</div>
+			{% endfor %}
+		</div>
+	</div>
+</main>
+
+{% endblock %}

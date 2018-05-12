@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<title>Tecnologico Netkaizen</title>
+
+	{% load static %}
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link type="text/css" rel="stylesheet" href="{% static 'core/css/materialize.min.css' %}" media="screen,projection" />
+	<link rel="stylesheet" type="text/css" href="{% static 'core/css/style.css' %}">
+
+	
+</head>
+
+<body>
+
+	<div class="parallax-container">
+
+		<ul class="sidenav" id="mobile-demo">
+			<li>
+				<a href="{% url 'home' %}">Inicio</a>
+			</li>
+			<li>
+				<a href="{% url 'offer' %}">Oferta Educativa</a>
+			</li>
+			<li>
+				<a class="dropdown-trigger" data-target="dropdown1">Nosotros
+					<i class="material-icons right">arrow_drop_down</i>
+				</a>
+			</li>
+			<li>
+				<a href="{% url 'campus' %}">Campus</a>
+			</li>
+			<li>
+				<a href="{% url 'course' %}">Cursos y Colegiaturas</a>
+			</li>
+			<li>
+				<a href="{% url 'about' %}">Conocenos</a>
+			</li>
+
+			<li>
+				<a href="iniciarsesion.html">Iniciar Sesion</a>
+			</li>
+		</ul>
+		<div class="navbar-fixed">
+			<nav>
+				<ul id="dropdown2" class="dropdown-content #424242 grey darken-3 ">
+					<li>
+						<a href="{% url 'mision' %}">
+							<span>Mision</span>
+						</a>
+					</li>
+					<li>
+						<a href="{% url 'vision' %}">
+							<span>Vision</span>
+						</a>
+					</li>
+					<li>
+						<a href="{% url 'history' %}">
+							<span>Semblanza Historica</span>
+						</a>
+					</li>
+
+				</ul>
+				<!--Hay dos dropdown porque son necesarios para navbar y side-nav -->
+				<ul id="dropdown1" class="dropdown-content #424242 grey darken-3 ">
+					<li>
+						<a href="{% url 'mision' %}">
+							<span>Mision</span>
+						</a>
+					</li>
+					<li>
+						<a href="{% url 'vision' %}">
+							<span>Vision</span>
+						</a>
+					</li>
+					<li>
+						<a href="{% url 'history' %}">
+							<span>Semblanza Historica</span>
+						</a>
+					</li>
+
+				</ul>
+
+				<div class="nav-wrapper #424242 grey darken-3">
+					<img src="{% static 'core/img/kaizen1.png' %}" width="190" height="64">
+					<a href="#" data-target="mobile-demo" class="sidenav-trigger">
+						<i class="material-icons">
+							menu
+						</i>
+					</a>
+					<!-- LOGOTIPO -->
+					<ul class="right hide-on-med-and-down">
+						<li>
+							<a href="{% url 'home' %}">Inicio</a>
+						</li>
+						<li>
+							<a href="{% url 'offer' %}">Oferta Educativa</a>
+						</li>
+						<li>
+							<a class="dropdown-trigger" data-target="dropdown2">Nosotros
+								<i class="material-icons right">arrow_drop_down</i>
+							</a>
+						</li>
+						<li>
+							<a href="{% url 'campus' %}">Campus</a>
+						</li>
+						<li>
+							<a href="{% url 'course' %}">Cursos y Colegiaturas</a>
+						</li>
+						<li>
+							<a href="{% url 'about' %}">Conocenos</a>
+						</li>
+						<li>
+							<a href="iniciarsesion.html">Iniciar Sesion</a>
+						</li>
+
+					</ul>
+				</div>
+			</nav>
+
+		</div>
+	</div>
+
+	<div class="slider fullscreen">
+		<ul class="slides">
+			<li>
+				<img src="{% static 'core/img/campus2.jpg' %}">
+				<div class="caption right-align">
+					<h3>
+						<a href="monterey.html">
+							<span>Campus Monterrey</span>
+						</a>
+					</h3>
+				</div>
+			</li>
+			<li>
+				<img src="{% static 'core/img/campus4.jpg' %}">
+				<div class="caption right-align">
+					<h3>
+						<a href="veracruz.html">
+							<span>Campus Veracruz</span>
+						</a>
+					</h3>
+				</div>
+			</li>
+			<li>
+				<img src="{% static 'core/img/campus3.jpg' %}">
+				<div class="caption left-align">
+					<h3>
+						<a href="cdmx.html">
+							<span>Campus Ciudad de México</span>
+						</a>
+					</h3>
+				</div>
+			</li>
+
+		</ul>
+	</div>
+
+
+	<script src="{% static 'core/js/jquery-3.3.1.min.js' %}"></script>
+	<script src="{% static 'core/js/materialize.min.js' %}"></script>
+	<script src="{% static 'core/js/app.js' %}"></script>
+</body>
+
+</html>
