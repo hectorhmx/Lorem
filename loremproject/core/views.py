@@ -4,9 +4,6 @@ from django.shortcuts import render, HttpResponse
 def home(request):
     return render(request, 'core/home.html')
 
-def offer(request):
-    return render(request, 'core/offer.html') 
-
 def mision(request):
     return render(request, 'core/mision.html')
 
