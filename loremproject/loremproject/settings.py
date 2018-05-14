@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     "planes",
     'core',
     'course',
+    'sales',
 ]
 
 MIDDLEWARE = [

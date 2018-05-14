@@ -6,7 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<meta name="description" content="">
 	<meta name="author" content="">
-	<title>Tecnologico Netkaizen</title>
+	<title>{% block title %}{% endblock %} | NetKaizen</title>
 
 	{% load static %}
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -35,7 +35,7 @@
 			<a href="{% url 'campus' %}">Campus</a>
 		</li>
 		<li>
-			<a href="{% url 'course' %}">Cursos y Colegiaturas</a>
+			<a href="{% url 'course' %}">Cursos y Certificaciones</a>
 		</li>
 		<li>
 			<a href="{% url 'about' %}">Conocenos</a>
@@ -114,7 +114,7 @@
 						<a href="{% url 'campus' %}">Campus</a>
 					</li>
 					<li>
-						<a href="{% url 'course' %}">Cursos y Colegiaturas</a>
+						<a href="{% url 'course' %}">Cursos y Certificaciones</a>
 					</li>
 					<li>
 						<a href="{% url 'about' %}">Conocenos</a>
