@@ -41,10 +41,15 @@
 			<li>
 				<a href="{% url 'about' %}">Conocenos</a>
 			</li>
-
-			<li>
-				<a href="iniciarsesion.html">Iniciar Sesion</a>
-			</li>
+			{% if not request.user.is_authenticated %}
+				<li>
+					<a href="{% url 'login' %}">Acceder</a>
+				</li>
+			{% else %}
+				<li>
+					<a href="{% url 'logout' %}">Salir</a>
+				</li>
+			{% endif %}
 		</ul>
 		<div class="navbar-fixed">
 			<nav>
@@ -115,10 +120,15 @@
 						<li>
 							<a href="{% url 'about' %}">Conocenos</a>
 						</li>
-						<li>
-							<a href="iniciarsesion.html">Iniciar Sesion</a>
-						</li>
-
+						{% if not request.user.is_authenticated %}
+							<li>
+								<a href="{% url 'login' %}">Acceder</a>
+							</li>
+						{% else %}
+							<li>
+								<a href="{% url 'logout' %}">Salir</a>
+							</li>
+						{% endif %}
 					</ul>
 				</div>
 			</nav>
