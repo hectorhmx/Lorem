@@ -1,5 +1,5 @@
-from django.shortcuts import render
-from .models import Buy
+from django.shortcuts import render, redirect
+from .models import Buy,ListaCursos
 
 # Create your views here.
 def course(request):
