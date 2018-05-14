@@ -2,6 +2,8 @@
 
 {% load static %} 
 
+{% block title %}Cursos y Certifiaciones{% endblock %}
+
 {% block content %}
 <main>
 	<h1 align="center">Lorem ipsum dolor sit amet</h1>
@@ -52,9 +54,25 @@
 						<span class="card-title activator grey-text text-darken-4">{{course.title}}
 							<i class="material-icons right">more_vert</i>
 						</span>
-						<p>
-							<a href="#">Agregar al carrito</a>
-						</p>
+						{% if request.user.is_authenticated %}
+							<p>
+								<form action="#" method="POST">
+									<p>
+									<label>
+										Agregar al carrito
+										<input type="checkbox" />
+										<span>Red</span>
+									</label>
+									</p>
+								</form>
+								<!-- <a href="#">Agregar al carrito</a>-->
+								{% if checkbox %}<p>Has apretado el objeto {{course.id}}</p>{% endif %}
+							</p>
+						{% else %}
+							<p>
+								<a href="{% url 'login' %}">Inicia Sesión</a>
+							</p>
+						{% endif %}
 					</div>
 					<div class="card-reveal">
 						<span class="card-title grey-text text-darken-4">{{course.title}}

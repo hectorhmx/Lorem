@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     "planes",
     'core',
     'course',
+    'sales',
 ]
 
 MIDDLEWARE = [
@@ -137,4 +138,9 @@ if DEBUG:
     EMAIL_FILE_PATH  = os.path.join(BASE_DIR, "sent_emails")
 else:
     # Aquí hay que configurar un email real para producción
-    pass
+    EMAIL_USE_TLS = True
+    EMAIL_HOST = 'smtp.gmail.com'
+    EMAIL_HOST_USER = 'eabetanlu@gmail.com'
+    EMAIL_HOST_PASSWORD = '1234asdfqwer'
+    EMAIL_PORT = 587
+
