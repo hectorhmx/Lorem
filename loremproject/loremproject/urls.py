@@ -22,12 +22,13 @@ urlpatterns = [
     path('', include('core.urls')),
     # Paths de course
     path('course/', include('course.urls')),
-    # Paths de login
-    path('login/', include('login.urls')),
     # Paths de offer
     path('planes/', include('planes.urls')),
     # Path admin
     path('admin/', admin.site.urls),
+    # Paths de Auth
+    path('accounts/', include('django.contrib.auth.urls')),
+    path('accounts/', include('registration.urls')),
 ]
 
 if settings.DEBUG:
