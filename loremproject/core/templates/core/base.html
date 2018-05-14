@@ -6,7 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<meta name="description" content="">
 	<meta name="author" content="">
-	<title>Tecnologico Netkaizen</title>
+	<title>{% block title %}{% endblock %} | NetKaizen</title>
 
 	{% load static %}
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -35,15 +35,20 @@
 			<a href="{% url 'campus' %}">Campus</a>
 		</li>
 		<li>
-			<a href="{% url 'course' %}">Cursos y Colegiaturas</a>
+			<a href="{% url 'course' %}">Cursos y Certificaciones</a>
 		</li>
 		<li>
 			<a href="{% url 'about' %}">Conocenos</a>
 		</li>
-
-		<li>
-			<a href="{% url 'login' %}">Iniciar Sesion</a>
-		</li>
+		{% if not request.user.is_authenticated %}
+			<li>
+				<a href="{% url 'login' %}">Acceder</a>
+			</li>
+		{% else %}
+			<li>
+				<a href="{% url 'logout' %}">Salir</a>
+			</li>
+		{% endif %}
 	</ul>
 	<div class="navbar-fixed">
 		<nav>
@@ -109,14 +114,20 @@
 						<a href="{% url 'campus' %}">Campus</a>
 					</li>
 					<li>
-						<a href="{% url 'course' %}">Cursos y Colegiaturas</a>
+						<a href="{% url 'course' %}">Cursos y Certificaciones</a>
 					</li>
 					<li>
 						<a href="{% url 'about' %}">Conocenos</a>
 					</li>
-					<li>
-						<a href="{% url 'login' %}">Iniciar Sesion</a>
-					</li>
+					{% if not request.user.is_authenticated %}
+						<li>
+							<a href="{% url 'login' %}">Acceder</a>
+						</li>
+					{% else %}
+						<li>
+							<a href="{% url 'logout' %}">Salir</a>
+						</li>
+					{% endif %}
 				</ul>
 			</div>
 		</nav>
@@ -217,7 +228,9 @@
 				<div class="col m3">
 					<h5>Siguenos en:</h5>
 					<ul>
-
+						<li>Facebook</li>
+						<li>Twitter</li>
+						<li>Youtube</li>
 					</ul>
 				</div>
 			</div>

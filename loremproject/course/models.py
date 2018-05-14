@@ -9,6 +9,7 @@ class Buy(models.Model):
     price = models.DecimalField(verbose_name="Precio", max_digits=6, decimal_places=2)
     quota = models.SmallIntegerField(verbose_name="Cupo", default=0)
     start = models.DateTimeField(verbose_name="Fecha de inicio", default=timezone.now)
+    selected = models.BooleanField(verbose_name="Seleccionado",default="False")
 
     class Meta:
         verbose_name = "compra"
